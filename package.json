@@ -1,0 +1,26 @@
+{
+  "name": "my-vue-scaffold",
+  "version": "1.0.0",
+  "description": "vue scaffold vite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wghe110/my-vue-scaffold.git"
+  },
+  "keywords": [
+    "vue",
+    "scaffold",
+    "vite",
+    "vue2",
+    "vue3"
+  ],
+  "author": "wghe110",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wghe110/my-vue-scaffold/issues"
+  },
+  "homepage": "https://github.com/wghe110/my-vue-scaffold#readme"
+}
