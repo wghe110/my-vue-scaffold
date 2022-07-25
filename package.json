@@ -1,11 +1,14 @@
 {
-  "name": "my-vue-scaffold",
+  "name": "wgh-cli",
   "version": "1.0.0",
-  "description": "vue scaffold vite",
+  "description": "vue scaffold vite cli",
   "main": "index.js",
   "scripts": {
     "dev": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "wgh": "index.js"
   },
   "repository": {
     "type": "git",
@@ -16,7 +19,8 @@
     "scaffold",
     "vite",
     "vue2",
-    "vue3"
+    "vue3",
+    "cli"
   ],
   "author": "wghe110",
   "license": "ISC",

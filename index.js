@@ -1,23 +1,34 @@
 #!/usr/bin/env node
 
 const { program } = require('commander')
+const chalk = require('chalk')
 
 // 模块
 const { VueInit } = require('./modules/vue')
 const { downloadGit } = require('./modules/download')
 
-// 版本
-program.version('1.0.0')
-
-// 交互
+// 介绍
 program
-  .option('--vue2')
-  .option('--vue3')
+    .name(chalk.yellow('wgh-cli'))
+    .description(chalk.dim('个人脚手架，集成了vue2和vue3，后续会添加更多框架...'))
+
+    .argument(`[${chalk.green('vue')}]`, chalk.blue('下载vue脚手架，需要选择vue版本'))
+    .argument(`[${chalk.green('vue2')}]`, chalk.blue('下载vue2脚手架'))
+    .argument(`[${chalk.green('[vue3]')}]`, chalk.blue('下载vue3脚手架'))
+
+    .version('1.0.0')
+
+const errorTips = () => {
+    console.log(chalk.red('输入命令错误'))
+    console.log('可以输入以下命令:')
+    console.log(`${chalk.green('wgh vue')} ${chalk.blue('下载vue脚手架，需要选择vue版本')}`)
+    console.log(`${chalk.green('wgh vue2')} ${chalk.blue('下载vue2脚手架')}`)
+    console.log(`${chalk.green('wgh vue3')} ${chalk.blue('下载vue3脚手架')}`)
+}
 
 program.parse();
 // console.log('Options: ', program.opts());
 // console.log('Remaining arguments: ', program.args);
-
 const opts = program.opts();
 const args = program.args;
 // 判断入参是否是vue2/vue3/vue
@@ -34,9 +45,10 @@ if(args.length && args.length === 1) {
             break;
         // TODO可以拓展
         default:
-            console.log('输入报错')
+            errorTips()
             break;
     }
 } else {
-    console.log('输入错误')
+    errorTips()
 }
+

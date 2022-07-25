@@ -36,8 +36,8 @@ const downloading = (src, folder='') => {
             // 下载成功
             loading.succeed('下载成功');
 
-            console.log(`安装依赖 ${chalk.blue('npm install')}`)
-            console.log(`开启本地服务器 ${chalk.blue('npm run serve')}`)
+            console.log(`${chalk.blue('安装依赖')} ${chalk.green('npm install')}`)
+            console.log(`${chalk.blue('开启本地服务器')} ${chalk.green('npm run serve')}`)
         }
     })
 }
