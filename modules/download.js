@@ -25,7 +25,7 @@ const downloadGit = (branch="main") => {
         })
 }
 
-const downloading = (src, folder='') => {
+const downloading = (src, folder='/') => {
     const loading = ora('正在下载...').start();
     download(src, folder, function(err) {
         if(err) {

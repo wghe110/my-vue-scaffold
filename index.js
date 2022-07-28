@@ -16,7 +16,7 @@ program
     .argument(`[${chalk.green('vue2')}]`, chalk.blue('下载vue2脚手架'))
     .argument(`[${chalk.green('[vue3]')}]`, chalk.blue('下载vue3脚手架'))
 
-    .version('1.0.0')
+    .version('1.0.2')
 
 const errorTips = () => {
     console.log(chalk.red('输入命令错误'))
