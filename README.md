@@ -2,12 +2,6 @@
 
 自定义脚手架
 
-## 安装
-- 局部安装
-```sh
-npm install wgh-cli --save
-```
-
 - 全局安装
 ```sh
 sudo npm install wgh-cli -g
