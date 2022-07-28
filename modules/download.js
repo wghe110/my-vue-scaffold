@@ -17,7 +17,7 @@ const downloadGit = (branch="main") => {
             }
         ])
         .then((answers) => {
-            const ans = answers['folder']
+            const ans = answers['folder'] || './'
             downloading(src, ans)
         })
         .catch(error => {
