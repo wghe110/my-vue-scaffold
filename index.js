@@ -15,8 +15,9 @@ program
     .argument(`[${chalk.green('vue')}]`, chalk.blue('下载vue脚手架，需要选择vue版本'))
     .argument(`[${chalk.green('vue2')}]`, chalk.blue('下载vue2脚手架'))
     .argument(`[${chalk.green('[vue3]')}]`, chalk.blue('下载vue3脚手架'))
+    .argument(`[${chalk.green('[uniapp]')}]`, chalk.blue('下载uniapp脚手架'))
 
-    .version('1.0.4')
+    .version('1.0.5')
 
 const errorTips = () => {
     console.log(chalk.red('输入命令错误'))
@@ -24,6 +25,7 @@ const errorTips = () => {
     console.log(`${chalk.green('wgh vue')} ${chalk.blue('下载vue脚手架，需要选择vue版本')}`)
     console.log(`${chalk.green('wgh vue2')} ${chalk.blue('下载vue2脚手架')}`)
     console.log(`${chalk.green('wgh vue3')} ${chalk.blue('下载vue3脚手架')}`)
+    console.log(`${chalk.green('wgh uniapp')} ${chalk.blue('下载uniapp脚手架')}`)
 }
 
 program.parse();
@@ -42,6 +44,8 @@ if(args.length && args.length === 1) {
             break;
         case 'vue3':
             downloadGit('dev_vue3')
+        case 'uniapp':
+            downloadGit('dev_uniapp')
             break;
         // TODO可以拓展
         default:

@@ -1,6 +1,6 @@
 {
   "name": "wgh-cli",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "个人脚手架，方便快速创建vue项目",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,8 @@
     "vite",
     "vue2",
     "vue3",
-    "cli"
+    "cli",
+    "uniapp"
   ],
   "author": "wghe110",
   "license": "ISC",
