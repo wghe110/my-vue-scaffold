@@ -31,3 +31,7 @@ wgh vue2
  ```sh
 wgh vue3
  ```
+  - uniapp
+ ```sh
+wgh uniapp
+ ```
